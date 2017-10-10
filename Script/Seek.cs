@@ -22,7 +22,7 @@ public class Seek : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector3 targetDir = Vector3.Normalize(target.position - transform.position);
         seeker.AddForce(targetDir * thrust);
